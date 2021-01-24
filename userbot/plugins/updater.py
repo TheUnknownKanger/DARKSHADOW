@@ -12,7 +12,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 from userbot import CMD_HELP, bot
 from userbot.utils import admin_cmd, sudo_cmd
 
-UPSTREAM_REPO_URL = "https://github.com/DARK-COBRA/DARKCOBRA"
+UPSTREAM_REPO_URL = "https://github.com/TheUnknownKanger/DARKSHADOW"
 HEROKU_API_KEY = Var.HEROKU_API_KEY
 HEROKU_APP_NAME = Var.HEROKU_APP_NAME
 
@@ -60,17 +60,17 @@ async def upstream(ups):
         return
     except InvalidGitRepositoryError as error:
         if conf != "now":
-            await ups.edit(f"**Hey ßoss!!!**😁😁\n__To get the Latest update of__ \n©DARK_COBRA_SUPPORT\n\n do |`.update now`| 😎😎 ")
+            await ups.edit(f"**Hey ßoss!!!**😁😁\n__To get the Latest update of__ \n©DARK_SHADOW_SUPPORT\n\n do |`.update now`| 😎😎 ")
             return
         repo = Repo.init()
         origin = repo.create_remote('upstream', off_repo)
         origin.fetch()
         force_update = True
-        repo.create_head('master', origin.refs.master)
-        repo.heads.master.set_tracking_branch(origin.refs.master)
-        repo.heads.master.checkout(True)
+        repo.create_head('main', origin.refs.main)
+        repo.heads.main.set_tracking_branch(origin.refs.main)
+        repo.heads.main.checkout(True)
     ac_br = repo.active_branch.name
-    if ac_br != 'master':
+    if ac_br != 'main':
         await ups.edit(
             f'**[UPDATER]:**` Looks like you are using your own custom branch ({ac_br}). '
             'in that case, Updater is unable to identify '
@@ -149,7 +149,7 @@ async def upstream(ups):
             await asyncio.sleep(1)
             await ups.edit("`⬛⬛⬛⬛ \n⬛❇️❇️⬛ \n⬛❇️❇️⬛ \n⬛⬛⬛⬛`")
             await asyncio.sleep(1)
-        await ups.edit("`⚜️Updating DarkCobra⚜️\n\nYou are the 👑KING👑 Boss!!\n\nPlease wait 5min😁😁\nThen try .alive to check` 😎😎\n\n**Powered by :-**\n©DARK_COBRA_SUPPORT ")
+        await ups.edit("`⚜️Updating DarkShadow⚜️\n\nYou are the 👑KING👑 Boss!!\n\nPlease wait 5min😁😁\nThen try .alive to check` 😎😎\n\n**Powered by :-**\n©DARK_SHADOW_SUPPORT ")
         remote.push(refspec="HEAD:refs/heads/master", force=True)
     else:
         try:
