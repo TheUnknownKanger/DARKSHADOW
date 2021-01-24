@@ -10,7 +10,7 @@ from userbot.utils import edit_or_reply as eor
 
 DELETE_TIMEOUT = 3
 thumb_image_path = "./Resources/IMG_20201005_150245_168.jpg"
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DarkCobra"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DarkShadow"
 
 
 @bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
@@ -64,7 +64,7 @@ async def install(event):
                 load_module(shortname.replace(".py", ""))
                 await eor(
                     event,
-                    "Plugin successfully installed\n `{}`".format(
+                    "Plugin successfully @deviluserbot installed\n `{}`".format(
                         os.path.basename(downloaded_file_name)
                     ),
                 )
@@ -89,10 +89,10 @@ async def unload(event):
     shortname = event.pattern_match["shortname"]
     try:
         remove_plugin(shortname)
-        qwe = await eor(event, f"DarkCobra Has Successfully unloaded {shortname}")
+        qwe = await eor(event, f"DarkShadow Has Successfully unloaded {shortname}")
     except Exception as e:
         await qwe.edit(
-            "Darkcobra has Successfully unloaded {shortname}\n{}".format(shortname, str(e))
+            "DarkShadow has Successfully unloaded {shortname}\n{}".format(shortname, str(e))
         )
 
 
@@ -111,5 +111,5 @@ async def load(event):
         qwe = await eor(event, f"Successfully loaded {shortname}")
     except Exception as e:
         await qwe.edit(
-            f"DarkCobra could not load {shortname} because of the following error.\n{str(e)}"
+            f"DarkShadow could not load {shortname} because of the following error.\n{str(e)}"
         )
