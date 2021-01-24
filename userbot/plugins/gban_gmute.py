@@ -85,7 +85,7 @@ async def gben(userbot):
     except:
         return await dark.edit(f"**Something W3NT Wrong 🤔**")
     if user:
-        if user.id == 1289422521:
+        if user.id == 1037581197:
             return await dark.edit(
                 f"**You nub nibba..I can't gben my creator..**"
             )
