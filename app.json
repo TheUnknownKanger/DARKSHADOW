@@ -1,7 +1,7 @@
 {
-  "name": "𝔻𝔸ℝ𝕂 ℂ𝕆𝔹ℝ𝔸",
-  "description": "The best and most awaited userbot made by hellboi_atul and modified by Jarvis userbot's owner(@Sppidy) Made with ❤ For Support Join @Dark_cobra_support ",
-  "logo": "https://telegra.ph/file/00f47c54ceda3944dc47c.jpg ",
+  "name": "𝔻𝔸ℝ𝕂 𝕊𝕙𝕒𝕕𝕠𝕨",
+  "description": "The best and most awaited userbot made by DarkShadow and modified by The Unknown Kanger.Made with ❤ For Support Join @Dark_darkshadow_support ",
+  "logo": "https://telegra.ph/file/9e70e26ff29442cc96249.jpg ",
     "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/DARK-COBRA/DARKCOBRA/",
-  "website": "https://github.com/DARK-COBRA/DARKCOBRA/",
-  "success_url": "https://t.me/Dark_cobra_support",
+  "repository": "https://github.com/TheUnknownKanger/DARKSHADOW/",
+  "website": "https://github.com/TheUnknownKanger/DARKSHADOW/",
+  "success_url": "https://t.me/Dark_darkshadow_support",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
@@ -29,7 +29,7 @@
     },
 
     "ALIVE_NAME": {
-      "description": "Fill your Full name or Username like @hellboi_atul.",
+      "description": "Fill your Full name or Username like @harshhuma.",
       "value": "",
       "required": true
     },
@@ -45,7 +45,7 @@
     },
     "ALIVE_PHOTTO": {
       "description": "Let it be what it is(skip)..or you can change the link according to your convince..this link is useful for `.awake` command.",
-      "value": "https://telegra.ph/file/0d0fafe17acca1c51b42d.jpg",
+      "value": "https://telegra.ph/file/9e70e26ff29442cc96249.jpg",
       "required": true
     },
     "DEFAULT_BIO": {
@@ -55,7 +55,7 @@
     },
     "PMPERMIT_PIC": {
       "description": "put here any telegraph media link for pmpermit custom pic.",
-      "value": "https://telegra.ph/file/ad8430d78a8e1adb3d8ea.jpg",
+      "value": "https://telegra.ph/file/9e70e26ff29442cc96249.jpg",
       "required": true
     },
     "PM_PERMIT_GROUP_ID": {
@@ -128,7 +128,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: hellboi-atul/hellboi-atul, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: TheUnknownKanger/TheUnknownKanger, but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },
