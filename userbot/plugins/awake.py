@@ -26,7 +26,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars 
 
 ALIVE_MESSAGE = Config.ALIVE_MSG
 if ALIVE_MESSAGE is None:
-   ALIVE_MESSAGE = "**�𝐃𝐀𝐑𝐊 𝐒𝐇𝐀𝐃𝐎𝐖 IS Awake🔱 \n\n\n**"
+   ALIVE_MESSAGE = "**☠️𝐃𝐀𝐑𝐊 𝐒𝐇𝐀𝐃𝐎𝐖 IS Awake☠️ \n\n\n**"
    ALIVE_MESSAGE += "`My Bot Status \n\n\n`"
    ALIVE_MESSAGE += f"`Telethon: TELETHON-1.19.0 \n\n`"
    ALIVE_MESSAGE += f"`Python: PYTHON-3.8.5 \n\n`"
